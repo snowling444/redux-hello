@@ -19,7 +19,13 @@ class CommentBox extends Component {
     //   // comments:[...this.state.comments,val]
     //   comments:this.state.comments.concat(val)
     // })
+
+    store.dispatch({
+      type:'ADD_COMMENT',
+      comment:this.refs.val.value
+    })//发出
     this.refs.commentForm.reset();
+    this.setState({comments: store.getState()});
   }
   render(){
     let commentList = this.state.comments.map( (item,i) => (
