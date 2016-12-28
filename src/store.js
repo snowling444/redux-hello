@@ -1,6 +1,6 @@
 import {createStore} from 'redux';
 
-let comments=['vsgx','dsdgss']
+let comments=['vsgx','dsdgss','erwrt','dgdgfd']
 
 function commentReducer(state=[],action){
   switch(action.type){

@@ -26,28 +26,38 @@ body {
 .post-body, .comment-box {
   background-color: #fff;
   width: 600px;
-  height: 300px;
   box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 8px;
   margin: 60px auto;
 }
 
 .post-body {
   position: relative;
+  height: 300px;
 }
-
-.post-body .comment-num {
+.comment-box{
+  min-height: 150px;
+  padding-bottom: 50px;
+}
+.post-body .comment-num,.like-num{
   position: absolute;
-  right: 20px;
   font-weight: bold;
   bottom: 20px;
-  width: 80px;
+  width: 70px;
   height: 45px;
   line-height: 45px;
   text-align: center;
-  background-color: #7B1FA2;
+  background-color: #E1BEE7;
   color: #fff;
+  font-size: 20px;
 }
-
+.comment-num{
+  right: 20px;
+}
+.like-num{
+  right: 100px;
+  border: none;
+  cursor: pointer;
+}
 .comment-box{
   position: relative;
 }
@@ -63,10 +73,10 @@ body {
   border-bottom: 2px solid #ccc;
 }
 .comment-form .submit{
-  color: #212121;
+  color: #fff;
   border: none;
   font-weight: bold;
-  background-color: #E1BEE7;
+  background-color: #7B1FA2;
   margin-left: 5px;
   height: 25px;
 }

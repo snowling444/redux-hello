@@ -1,16 +1,31 @@
 import React, { Component } from 'react';
-
+import {connect} from 'react-redux';
+import store from '../store';
+import Like from './Like';
 
 class PostBody extends Component {
+  constructor(){
+    super();
+    this.state={
+      like:3
+    }
+  }
+  handleClick(){
+    this.setState({like:this.state.like + 1})
+  }
   render(){
     return(
       <div className="post-body">
+        <div className="like-num" onClick={this.handleClick.bind(this)}>
+          <Like like={this.state.like}/>
+        </div>
         <div className="comment-num">
-          24
+          {this.props.comments.length}
         </div>
       </div>
     )
   }
 }
 
-export default PostBody;
+const mapStateToProps = (state) => ({comments:state});
+export default connect(mapStateToProps)(PostBody);
