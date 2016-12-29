@@ -5,7 +5,7 @@ class CommentBox extends Component {
   constructor(){
     super();
     this.state={
-      comments:store.getState()
+      comments:store.getState().comments
     }
   }
   handleSubmit(e){
@@ -25,7 +25,7 @@ class CommentBox extends Component {
       comment:this.refs.val.value
     })//发出
     this.refs.commentForm.reset();
-    this.setState({comments: store.getState()});
+    this.setState({comments: store.getState().comments});
   }
   render(){
     let commentList = this.state.comments.map( (item,i) => (

@@ -1,16 +1,18 @@
 import {createStore} from 'redux';
+import rootReducer from './reducers';
 
-let comments=['vsgx','dsdgss','erwrt','dgdgfd']
+const comments=['vsgx','dsdgss','erwrt','dgdgfd']
 
-function commentReducer(state=[],action){
-  switch(action.type){
-    case 'ADD_COMMENT':
-       return [...state, action.comment]
-    default:
-      return state
-  }
+const posts =[
+  {id:'1',title:'Snow'},
+  {id:'2',title:'Milk'}
+]
+
+const defaultState = {
+  comments,
+  posts
 }
 
-let store = createStore(commentReducer,comments)
+let store = createStore(rootReducer,defaultState)
 
 export default store;
