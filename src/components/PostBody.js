@@ -20,7 +20,7 @@ class PostBody extends Component {
           <Like like={this.state.like}/>
         </div>
         <div className="comment-num">
-          {this.props.comments.length}
+          {this.props.comments[this.props.id].length}
         </div>
         {this.props.id}
       </div>

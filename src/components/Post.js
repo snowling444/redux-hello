@@ -14,7 +14,7 @@ class Post extends React.Component {
             <PostBody id={this.props.params.postId}/>
           </div>
           <div className="bottom clearfix">
-            <CommentBox />
+            <CommentBox postId={this.props.params.postId}/>
           </div>
         </div>
       </Provider>

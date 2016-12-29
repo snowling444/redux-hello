@@ -1,7 +1,10 @@
 import {createStore} from 'redux';
 import rootReducer from './reducers';
 
-const comments=['vsgx','dsdgss','erwrt','dgdgfd']
+const comments = {
+  1: ['fsfsfsf', 'dsf'],
+  2: ['rdfs', 'sadfs']
+}
 
 const posts =[
   {id:'1',title:'Snow'},
