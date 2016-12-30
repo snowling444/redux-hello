@@ -38,7 +38,7 @@ body {
   min-height: 150px;
   padding-bottom: 50px;
 }
-.post-body .comment-num,.like-num{
+.post-body .comment-num,.likes-num{
   position: absolute;
   font-weight: bold;
   bottom: 20px;
@@ -53,7 +53,7 @@ body {
 .comment-num{
   right: 20px;
 }
-.like-num{
+.likes-num{
   right: 100px;
   border: none;
   cursor: pointer;
