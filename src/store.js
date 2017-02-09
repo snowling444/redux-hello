@@ -7,7 +7,7 @@ const comments = {
 }
 
 const posts =[
-  {id:'1',title:'Snow',likes:5},
+  {id:'1',title:'Snow',likes:100},
   {id:'2',title:'Milk',likes:8}
 ]
 

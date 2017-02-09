@@ -1,3 +1,6 @@
+*{
+ border-box: box-sizing;
+}
 body {
   margin: 0;
 }
@@ -48,7 +51,7 @@ body {
   text-align: center;
   background-color: #E1BEE7;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
 }
 .comment-num{
   right: 20px;
